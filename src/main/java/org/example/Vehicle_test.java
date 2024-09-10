@@ -28,7 +28,7 @@ class Car extends Vehicle {
     }
     @Override
     public String vehicleSound() {
-        return "Ngeng Ngenggg";
+        return "Broooom";
     }
     public void displayCarInfo() {
         displayInfo();
@@ -44,22 +44,21 @@ class Motorcycle extends Vehicle {
 
     @Override
     public String vehicleSound() {
-        return "Broom broom";
+        return "Ngeeeeeng";
     }
     public void displayMotorcycleInfo() {
         displayInfo();
         System.out.println("Has Sidecar: " + hasSidecar);
     }
 }
-
 public class Vehicle_test {
     public static void main(String[] args) {
-        Car car = new Car("Honda", "Jazz", 2020, 4);
+        Car car = new Car("Honda", "Fortuner", 2020, 4);
         System.out.println("Description of Car:");
         car.displayCarInfo();
         System.out.println("Car Sound: " + car.vehicleSound());
 
-        Motorcycle motorcycle = new Motorcycle("Harley-Davidson", "Moge", 2023, "Yes");
+        Motorcycle motorcycle = new Motorcycle("N-max", "150cc", 2023, "Yes");
         System.out.println("\nDescription of Motorcycle :");
         motorcycle.displayMotorcycleInfo();
         System.out.println("Motorcycle Sound: " + motorcycle.vehicleSound());
